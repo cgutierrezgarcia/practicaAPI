@@ -1,0 +1,111 @@
+* {
+  font-family: "Oxygen", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: 32px 10px;
+  background-color: #333536;
+}
+
+.titulo {
+  font-size: 3.4rem;
+  color: #fff;
+  text-align: center;
+}
+
+#contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin: auto;
+}
+.contenedorPersonaje {
+  width: 25%;
+}
+
+.pjFichaFoco {
+  width: 50%;
+}
+
+.foco {
+  display: flex;
+  flex-direction: row;
+}
+
+.fichaPersonaje {
+  padding: 20px;
+}
+
+.personaje {
+  min-height: 370px;
+  margin: auto;
+  border-left: 5px solid #5c6366;
+  border-radius: 5px;
+  background-color: #f8f8f9;
+  box-shadow: 2px 2px 2px 1px #00000022;
+  cursor: pointer;
+}
+
+.personajeDatos {
+  padding: 10px;
+}
+
+.pjNombre {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #333536;
+}
+
+.pjImagen > img {
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .personaje {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .personaje {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contenedorPersonaje {
+    width: 33%;
+  }
+  .pjFichaFoco {
+    width: 50%;
+  }
+  .personaje {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 800px) {
+  .personaje {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contenedorPersonaje {
+    width: 100%;
+  }
+  .personaje {
+    max-width: 300px;
+    margin: auto;
+  }
+  .foco {
+    flex-direction: column;
+  }
+}
